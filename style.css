@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4caf50;
+    color: white;
+    padding: 1rem 0;
+}
+header .logo {
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+header nav ul li {
+    margin: 0;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+main {
+    padding: 20px;
+}
+.hero {
+    background: url('https://lh5.googleusercontent.com/p/AF1QipOn9MjC_dOPx6yNArXy2OJiaNB-W0ER5QQ-eR6_=w589-h340-n-k-no') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+/* .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+  }
+   */
+.hero h1 {
+    
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.hero button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+section {
+    margin-bottom: 40px;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.destination {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 5px;
+    padding: 100px 20px;
+    height: 300px;
+    font-size: 1.5rem;
+}
+.navFlex{
+    display: none;
+}
+.navFlex a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+.contactC{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 20px;
+}
+.contactC h3 {
+    margin-bottom: 30px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+    .grid {
+        flex-direction: column;
+    }
+    .destination, .package {
+        flex: 1 1 100%;
+        height: 300px;
+    }
+    .navFlex {
+        display: block;
+    }
+    .contactC{
+        display: block;
+    }
+}
